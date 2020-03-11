@@ -22,7 +22,7 @@ app.use(bodyParser.json())
 
 app.use(bodyParser.urlencoded({ extended: false }))
  
-// require('./develop/routes/apiRoutes.js')(app)
+require('./develop/routes/apiRoutes.js')(app)
 require('./develop/routes/htmlRoutes.js')(app)
 
 app.listen(PORT, function () {
