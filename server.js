@@ -7,7 +7,7 @@ var app = express();
 // set up portal
 var PORT = process.env.PORT || 3000;
 
-// app.use(express.static(__dirname,"public"));
+app.use(express.static("develop/public"));
 
 // server handler function test-commented out as no longer needed
 // app.get('/', function(req,res) {
